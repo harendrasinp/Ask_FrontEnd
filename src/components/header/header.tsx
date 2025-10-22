@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-export const Header = () => {
+const Header = () => {
     return (
         <div className='w-full bg-gray-100 flex items-center justify-between p-2'>
-            <div className=' relative w-[8rem] h-[2rem]'><Image src="/Images/Logo/Logo1.png" alt="logo" fill className='object-contain'/></div>
+            <div className='relative w-[8rem] h-[2rem]'><Image src="/Images/Logo/Logo1.png" alt="logo" fill className='object-contain'/></div>
             <div className='hidden w-[16rem] lg:flex justify-center items-center gap-2'>
                 <Link href="/" className='p-1 text-amber-50'>Home</Link>
                 <Link href="/about" className='p-1 text-amber-50'>About</Link>
@@ -19,3 +19,4 @@ export const Header = () => {
         </div>
     )
 }
+ export default Header
