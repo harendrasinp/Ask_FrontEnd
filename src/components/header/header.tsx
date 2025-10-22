@@ -12,8 +12,8 @@ const Header = () => {
         dispatch(toggleStatus(!status))
     }
     return (
-        <div className='w-full bg-gray-100 flex items-center justify-between p-2'>
-            <div className='relative w-[8rem] h-[2rem] lg:w-[12rem] lg:h-[3rem]'><Image src="/Images/Logo/logo1.png" alt="logo" fill className='object-contain'/></div>
+        <div className='w-full bg-gray-100 flex items-center justify-between p-3'>
+            <div className='relative w-[11rem] h-[3rem] lg:w-[12rem] lg:h-[3rem]'><Image src="/Images/Logo/logo1.png" alt="logo" fill className='object-contain'/></div>
             <div className='hidden w-[16rem] lg:flex justify-center items-center gap-2'>
                 <Link href="/" className='p-1 text-amber-50'>Home</Link>
                 <Link href="/about" className='p-1 text-amber-50'>About</Link>
