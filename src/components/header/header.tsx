@@ -11,7 +11,7 @@ export const Header = () => {
                 <Link href="/contact" className='p-1 text-amber-50'>Contact</Link>
                 <Link href="/services" className='p-1 text-amber-50'>Services</Link>
             </div>
-            <div className='lg:hidden flex flex-col justify-center items-center gap-1.5 border-1 border-b-cyan-950 rounded p-2'>
+            <div className='lg:hidden flex flex-col justify-center items-center gap-1.5 border-1 border-cyan-950 rounded p-2'>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
