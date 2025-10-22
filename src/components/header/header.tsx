@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const Header = () => {
     return (
         <div className='w-full bg-gray-100 flex items-center justify-between p-2'>
-            <div><Image src="/Images/Logo/Logo1.png" alt="logo" width={150} height={0} className='rounded-full'/></div>
+            <div className=' relative w-[8rem] h-[2rem]'><Image src="/Images/Logo/Logo1.png" alt="logo" fill className='object-contain'/></div>
             <div className='hidden w-[16rem] lg:flex justify-center items-center gap-2'>
                 <Link href="/" className='p-1 text-amber-50'>Home</Link>
                 <Link href="/about" className='p-1 text-amber-50'>About</Link>
