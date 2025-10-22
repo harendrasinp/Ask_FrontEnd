@@ -1,7 +1,16 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import {useDispatch,useSelector} from 'react-redux'
+import { toggleStatus } from '@/redux/counterSclice'
 const Header = () => {
+    const status=useSelector((state:any)=>state.counter.status);
+    const dispatch=useDispatch();
+
+    const openStatus=()=>{
+        dispatch(toggleStatus(!status))
+    }
     return (
         <div className='w-full bg-gray-100 flex items-center justify-between p-2'>
             <div className='relative w-[8rem] h-[2rem] lg:w-[12rem] lg:h-[3rem]'><Image src="/Images/Logo/logo1.png" alt="logo" fill className='object-contain'/></div>
@@ -11,7 +20,7 @@ const Header = () => {
                 <Link href="/contact" className='p-1 text-amber-50'>Contact</Link>
                 <Link href="/services" className='p-1 text-amber-50'>Services</Link>
             </div>
-            <div className='lg:hidden flex flex-col justify-center items-center gap-1.5 border-1 border-cyan-950 rounded p-2'>
+            <div className='lg:hidden flex flex-col justify-center items-center gap-1.5 border-1 border-cyan-950 rounded p-2' onClick={openStatus}>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
                <div className='w-[25px] h-[2px] bg-cyan-950'></div>
