@@ -11,10 +11,10 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-green-100 h-screen w-full'>
-        <div>
-          <span>{MissionData.title}</span>
-          <p className='text-gray-500'>{MissionData.Description}</p>
+      <div className='bg-green-100 h-screen w-full '>
+        <div className='absolute mt-2'>
+          <span className='text-black font-semibold'>{MissionData.title}</span>
+          <p className='text-black'>{MissionData.Description}</p>
         </div>
       </div>
     </>
