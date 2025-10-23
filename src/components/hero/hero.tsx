@@ -13,8 +13,8 @@ const Hero = () => {
       </div>
       <div className='bg-green-100 h-screen w-full flex justify-center '>
         <div className='absolute mt-2'>
-          <span className='text-black font-semibold inter-title'>{MissionData.title}</span>
-          <p className='text-black text-justify w-[23rem] DescriptionFont lg:w-full'>{MissionData.Description}</p>
+          <span className='text-black font-bold'>{MissionData.title}</span>
+          <p className='text-black text-justify w-[23rem] lg:w-full'>{MissionData.Description}</p>
         </div>
       </div>
     </>
