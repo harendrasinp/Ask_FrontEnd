@@ -11,7 +11,7 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-green-100 h-screen w-full flex justify-center '>
+      <div className='bg-[url("/Images/Hero/herobg2.png")] bg-cover bg-no-repeat bg-center w-full h-[45rem] lg:h-screen flex justify-center '>
         <div className='absolute mt-2'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mt-2 mb-2'></div>
