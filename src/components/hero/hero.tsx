@@ -1,21 +1,7 @@
 "use client"
 import { heroData } from '@/content/hero/data'
 import { MissionData } from '@/content/hero/mission'
-import { useEffect, useState } from 'react'
-import { ImagesData } from '@/content/hero/images'
-import Image from 'next/image'
 const Hero = () => {
-  const [index, setIndex] = useState(0)
-  useEffect(() => {
-    if (index <= ImagesData.length) {
-      const timer = setInterval(() => {
-        setIndex((image) => image + 1)
-      }, 2000)
-      return () => clearInterval(timer)
-    } else {
-      setIndex(0)
-    }
-  }, [index])
 
   return (
     <>
@@ -25,7 +11,7 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-[url("/Images/Hero/BgImage/herobg2.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-32'>
+      <div className='bg-[url("/Images/Hero/BgImage/herobg2.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-32 lg:gap-60'>
        
        <div className=''>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
@@ -34,9 +20,7 @@ const Hero = () => {
         </div>
 
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>
-          {ImagesData[index] ?
-            <Image src={ImagesData[index]} alt='installation Image'fill className='shadow-2xl shadow-green-700'></Image>
-            : null}
+            <video src="/Images/Hero/installation_pic/vedio.mp4" muted autoPlay playsInline ></video>
         </div>
 
       </div>
