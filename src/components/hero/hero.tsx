@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>
-            <video src="/Images/Hero/installation_pic/vedio.mp4" muted autoPlay playsInline ></video>
+            <video src="/Images/Hero/installation_pic/vedio.mp4" loop muted autoPlay playsInline ></video>
         </div>
 
       </div>
