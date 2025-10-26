@@ -6,8 +6,8 @@ const Hero = () => {
   const [data,setData]=useState("")
   useEffect(()=>{
     setData("transition-transform duration-500 ease-in translate-x-0")
-  },)
-
+  })
+  
   return (
     <>
       <div className='bg-[url("/Images/Hero/BgImage/hero1.jpg")] bg-cover bg-center bg-no-repeat w-full 
