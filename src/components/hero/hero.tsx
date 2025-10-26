@@ -1,7 +1,12 @@
 "use client"
 import { heroData } from '@/content/hero/data'
 import { MissionData } from '@/content/hero/mission'
+import { useEffect, useState } from 'react'
 const Hero = () => {
+  const [data,setData]=useState("")
+  useEffect(()=>{
+    setData("transition-transform duration-500 ease-in translate-x-0")
+  },[])
 
   return (
     <>
@@ -11,12 +16,12 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-[url("/Images/Hero/BgImage/herobg2.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-32 lg:gap-60 p-4'>
+      <div className='bg-[url("/Images/Hero/BgImage/herobg2.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-32 lg:gap-60'>
 
-        <div className=''>
+        <div className='w-full p-4'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
-          <p className='text-black text-justify w-full'>{MissionData.Description}</p>
+          <p className={`text-black text-justify w-full ${data?data:"translate-x-full"}`}>{MissionData.Description}</p>
         </div>
 
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>

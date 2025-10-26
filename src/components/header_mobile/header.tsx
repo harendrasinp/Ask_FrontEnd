@@ -11,7 +11,7 @@ const HeaderMobile = () => {
     useEffect(()=>{
       const handleClickOutside=(event:MouseEvent)=>{
         if(clickRefInBar.current && clickRefInBar.current.contains(event.target as Node)){
-          return
+          
         }
         dispatch(toggleStatus(false))
       }
