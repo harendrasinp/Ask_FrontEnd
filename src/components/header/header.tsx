@@ -6,12 +6,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleStatus } from '@/redux/counterSclice'
 const Header = () => {
     const status = useSelector((state: any) => state.counter.status);
-    const [lineState, setLineState] = useState(false)
     const dispatch = useDispatch();
 
     const openStatus = () => {
         dispatch(toggleStatus(!status))
-        setLineState(!lineState)
 
     }
     return (
@@ -27,13 +25,13 @@ const Header = () => {
                 className='lg:hidden flex flex-col justify-center items-center gap-1.5 border border-cyan-950 rounded p-2'
                 onClick={openStatus}>
                 {/* Top line */}
-                <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${lineState ? "rotate-45 translate-y-[4.5px]" : ""}`}></div>
+                <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "rotate-45 translate-y-[4.5px]" : ""}`}></div>
                 {/* Middle line (hidden when active) */}
-                {!lineState && (
+                {!status && (
                     <div className="w-[25px] h-[2px] bg-cyan-950 transition-all duration-300"></div>
                 )}
                 {/* Bottom line */}
-                <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${lineState ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
+                <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
             </div>
 
         </div>
