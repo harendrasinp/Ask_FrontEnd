@@ -15,7 +15,7 @@ const Hero = () => {
 
         <div className=''>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
-          <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2 '></div>
+          <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
           <p className='text-black text-justify w-full'>{MissionData.Description}</p>
         </div>
 
