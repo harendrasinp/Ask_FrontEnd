@@ -30,7 +30,7 @@ const Hero = () => {
         <div className='w-full px-4 mb-10'>
           <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400'></div>
-          <p className='text-justify text-blue-400'>{whoweare.description}</p>
+          <p className='text-justify text-blue-300'>{whoweare.description}</p>
         </div>
       </div>
     </div>
