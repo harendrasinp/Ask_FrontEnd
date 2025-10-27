@@ -9,7 +9,7 @@ const ClientWrapper=({ children }: { children: React.ReactNode }) =>{
   return (
     <Provider store={store}>
       <Header />
-      <HeaderMobile />
+      {/* <HeaderMobile /> */}
       <main>{children}</main>
     </Provider>
   );

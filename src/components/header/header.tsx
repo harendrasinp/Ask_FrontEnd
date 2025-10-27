@@ -1,16 +1,16 @@
 "use client"
-import React, { useState } from 'react'
+import React, {useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleStatus } from '@/redux/counterSclice'
+import HeaderMobile from '../header_mobile/header'
 const Header = () => {
     const status = useSelector((state: any) => state.counter.status);
     const dispatch = useDispatch();
-
+    const menuRef = useRef<HTMLDivElement | null>(null) 
     const openStatus = () => {
-        dispatch(toggleStatus(!status))
-
+         dispatch(toggleStatus(!status))
     }
     return (
         <div className='w-full bg-gray-100 flex items-center justify-between p-3'>
@@ -21,7 +21,7 @@ const Header = () => {
                 <Link href="/contact" className='p-1 text-amber-50'>Contact</Link>
                 <Link href="/services" className='p-1 text-amber-50'>Services</Link>
             </div>
-            <div
+            <div ref={menuRef}
                 className='lg:hidden flex flex-col justify-center items-center gap-1.5 border border-cyan-950 rounded p-2'
                 onClick={openStatus}>
                 {/* Top line */}
@@ -33,7 +33,7 @@ const Header = () => {
                 {/* Bottom line */}
                 <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
             </div>
-
+            {status?<HeaderMobile menuRefData={menuRef}/>:null}
         </div>
     )
 }
