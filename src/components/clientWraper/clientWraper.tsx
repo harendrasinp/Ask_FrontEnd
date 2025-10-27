@@ -7,7 +7,7 @@ const ClientWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
   <Provider store={store}>
   <Header />
-  <main className="mt-[4.1rem]">{children}</main>
+  <main className="mt-[5rem]">{children}</main>
   </Provider>
   );
 }
