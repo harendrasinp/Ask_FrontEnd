@@ -4,11 +4,11 @@ import { MissionData } from '@/content/hero/mission'
 import { useEffect, useState } from 'react'
 import { whoweare } from '@/content/hero/whoweare'
 const Hero = () => {
-  const [data,setData]=useState("")
-  useEffect(()=>{
+  const [data, setData] = useState("")
+  useEffect(() => {
     setData("transition-transform duration-500 ease-in translate-x-0")
   })
-  
+
   return (
     <div>
       <div className='bg-[url("/Images/Hero/BgImage/hero1.jpg")] bg-center bg-cover bg-no-repeat w-full h-[15rem] lg:h-[25rem]'>
@@ -16,20 +16,20 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-[url("/Images/Hero/BgImage/herobg1.png")] bg-cover bg-center w-full h-[40rem] flex flex-col items-center gap-6 lg:gap-52'>
+      <div className='bg-[url("/Images/Hero/BgImage/herobg1.png")] bg-cover bg-center w-full h-[41rem] flex flex-col items-center gap-10 lg:gap-52'>
 
         <div className='w-full p-4'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
-          <p className={`text-black text-justify w-full ${data?data:"translate-x-full"}`}>{MissionData.Description}</p>
+          <p className={`text-black text-justify w-full ${data ? data : "translate-x-full"}`}>{MissionData.Description}</p>
         </div>
 
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>
           <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline ></video>
         </div>
-        <div className='w-full p-4'>
+        <div className='w-full px-4 mb-10'>
           <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
-           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
+          <div className='w-[6.9rem] h-[0.2rem] bg-amber-400'></div>
           <p className='text-justify text-blue-400'>{whoweare.description}</p>
         </div>
       </div>
