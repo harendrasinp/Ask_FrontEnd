@@ -15,7 +15,7 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
         </div>
       </div>
-      <div className='bg-[url("/Images/Hero/BgImage/herobg2.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-32 lg:gap-60'>
+      <div className='bg-[url("/Images/Hero/BgImage/herobg1.png")] bg-cover bg-center w-full h-screen flex flex-col justify-baseline items-center gap-16.5 lg:gap-60'>
 
         <div className='w-full p-4'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
 
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>
-          <video src="/Images/Hero/installation_pic/vedio.mp4" loop muted autoPlay playsInline ></video>
+          <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline ></video>
         </div>
 
       </div>
