@@ -2,6 +2,7 @@
 import { heroData } from '@/content/hero/data'
 import { MissionData } from '@/content/hero/mission'
 import { useEffect, useState } from 'react'
+import { whoweare } from '@/content/hero/whoweare'
 const Hero = () => {
   const [data,setData]=useState("")
   useEffect(()=>{
@@ -26,7 +27,11 @@ const Hero = () => {
         <div className='relative flex justify-center w-[18rem] h-[12rem] lg:w-[30rem] lg:h-[18rem]'>
           <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline ></video>
         </div>
-
+        <div className='w-full p-4'>
+          <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
+           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
+          <p className='text-justify text-blue-400'>{whoweare.description}</p>
+        </div>
       </div>
     </div>
   )
