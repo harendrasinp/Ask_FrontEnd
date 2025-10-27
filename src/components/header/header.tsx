@@ -33,7 +33,7 @@ const Header = () => {
                 {/* Bottom line */}
                 <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
             </div>
-            {status?<HeaderMobile menuRefData={menuRef}/>:null}
+            <HeaderMobile menuRefData={menuRef} />
         </div>
     )
 }
