@@ -26,8 +26,8 @@ const HeaderMobile = ({ menuRefData }: HeaderMobileProps) => {
     };
   }, [])
   return (
-    <div ref={clickRefInBar} className={`fixed top-18 md:top-15 right-0 bottom-0 bg-black/90 w-64 shadow-lg transform transition-transform duration-300 z-40 ${status ? "translate-x-0" : "translate-x-full"}`}>
-      <div className='flex flex-col items-center gap-4 mt-5'>
+    <div ref={clickRefInBar} className={`fixed top-18 md:top-15 right-0 bottom-0 bg-cyan-500/90 w-64 shadow-lg transform transition-transform duration-300 z-40 ${status ? "translate-x-0" : "translate-x-full"}`}>
+      <div className='flex flex-col items-start justify-center gap-4 mt-5 px-2 '>
         <Link href={"/"} className='text-white'>Home</Link>
         <Link href={"/"} className='text-white'>Services</Link>
         <Link href={"/"} className='text-white'>AboutUs</Link>
