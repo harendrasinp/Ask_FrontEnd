@@ -17,7 +17,7 @@ const Hero = () => {
       </section>
       {/* ----------------------------Mission Section------------------------------------ */}
       <section className='relative w-full h-[25rem] flex justify-center'>
-        <img src="/Images/Hero/BgImage/Herobg1.png" alt="png image blue flow"
+        <img src="/Images/Hero/BgImage/herobg1.png" alt="png image blue flow"
         className='w-full h-full' />
         <div className='z-10 absolute w-[24rem] py-1 px-5 lg:w-[55rem] lg:p-5'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
