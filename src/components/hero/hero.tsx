@@ -25,9 +25,9 @@ const Hero = () => {
         </div>
       </section>
       {/* -----------------------------------WHO WE ARE Section------------------------- */}
-      <section className='w-full flex flex-col justify-center items-center'>
+      <section className='w-full flex flex-col items-center mb-5'>
         <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline className='w-[18rem] 
-        h-[18rem] lg:w-[35rem] lg:h-[18rem]'>
+        h-[11rem] lg:w-[35rem] lg:h-[18rem]'>
         </video>
         <div className='w-full px-4'>
           <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
