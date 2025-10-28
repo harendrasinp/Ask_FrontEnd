@@ -10,8 +10,8 @@ const Hero = () => {
       <section className="relative w-full h-[15rem] lg:h-[20rem] flex items-center justify-center overflow-hidden">
         <img src="/Images/Hero/BgImage/hero1.jpg"alt="Hero background"
           className="absolute top-0 left-0 w-full h-full object-cover md:object-fill"/>
-        <div className='absolute text-blue-950 font-semibold text-[1rem] left-2 top-2 z-50'>
-          <p className='w-[15rem] lg:w-full'>{heroData.heading}</p>
+        <div className='absolute text-blue-950 font-semibold text-[1rem] left-2 top-2 z-2'>
+          <p className='w-[15rem] lg:w-full font-semibold'>{heroData.heading}</p>
         </div>
       </section>
       {/* ----------------------------Mission Section------------------------------------ */}
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className='z-10 absolute w-[24rem] py-1 px-3 lg:w-[55rem] lg:p-5'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-blue-950 mb-2'></div>
-          <p className='text-black text-justify oooh-baby-regular'>{MissionData.Description}</p>
+          <p className='text-black text-justify pompiere-regular '>{MissionData.Description}</p>
         </div>
       </section>
       {/* -----------------------------------WHO WE ARE Section------------------------- */}
