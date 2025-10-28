@@ -16,10 +16,10 @@ const Hero = () => {
         </div>
       </section>
       {/* ----------------------------Mission Section------------------------------------ */}
-      <section className='relative w-full h-[25rem] flex justify-center overflow-hidden'>
+      <section className='relative w-full h-[25rem] flex justify-center'>
         <img src="/Images/Hero/BgImage/Herobg1.png" alt="png image blue flow"
         className='w-full h-full' />
-        <div className='z-10 absolute w-[24rem] p-2 lg:w-[55rem] lg:p-5'>
+        <div className='z-10 absolute w-[24rem] py-1 px-5 lg:w-[55rem] lg:p-5'>
           <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-amber-400 mb-2'></div>
           <p className='text-black text-justify'>{MissionData.Description}</p>
