@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import ClientWrapper from "@/components/clientWraper/clientWraper";
-import { Poppins } from "next/font/google";
 
-const poppins = Poppins({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-poppins",
 });
 
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable}} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>

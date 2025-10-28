@@ -1,3 +1,10 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pompiere&family=Special+Gothic:wght@400..700&display=swap');
 
+
+.oooh-baby-regular {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
