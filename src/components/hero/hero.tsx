@@ -1,7 +1,6 @@
 "use client"
 import { heroData } from '@/content/hero/data'
 import { MissionData } from '@/content/hero/mission'
-import { useEffect, useState } from 'react'
 import { whoweare } from '@/content/hero/whoweare'
 const Hero = () => {
 
@@ -27,7 +26,8 @@ const Hero = () => {
       </section>
       {/* -----------------------------------WHO WE ARE Section------------------------- */}
       <section className='w-full flex flex-col justify-center items-center'>
-        <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline className='w-[35rem] h-[18rem]'>
+        <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline className='w-[18rem] 
+        h-[18rem] lg:w-[35rem] lg:h-[18rem]'>
         </video>
         <div className='w-full px-4'>
           <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
