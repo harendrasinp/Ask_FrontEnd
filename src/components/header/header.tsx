@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleStatus } from '@/redux/counterSclice'
 import HeaderMobile from '../sideBare/header'
 import { marqueData } from '@/content/header/marque'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone,faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     const status = useSelector((state: any) => state.counter.status);
     const dispatch = useDispatch();
@@ -40,7 +42,13 @@ const Header = () => {
                     <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
                 </div>
             </div>
-            <div className='w-full text-blue-950 animationOwner whitespace-nowrap text-[14px] lg:text-[1rem]'>{`${marqueData.name}${marqueData.Conatact}, ${marqueData.email}`}</div>
+            <div className="w-full text-blue-950 animationOwner whitespace-nowrap text-[14px] lg:text-[1rem] flex items-center gap-2">
+                <span>{marqueData.name}</span>
+                <FontAwesomeIcon icon={faPhone}/>
+                <span>{marqueData.Conatact},</span>
+                <FontAwesomeIcon icon={faEnvelope}/>
+                <span>{marqueData.email}</span>
+            </div>
             <HeaderMobile menuRefData={menuRef} />
         </div>
     )
