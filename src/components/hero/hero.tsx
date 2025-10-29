@@ -12,8 +12,6 @@ const Hero = () => {
           <p className='w-[15rem] lg:w-full font-semibold'>{heroData.heading}</p>
         </div>
       </section>
-     
-
     </div>
   )
 }
