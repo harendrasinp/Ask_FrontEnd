@@ -40,7 +40,7 @@ const Header = () => {
                     <div className={`w-[25px] h-[2px] bg-cyan-950 transition-transform duration-300 ${status ? "-rotate-45 -translate-y-[4.5px]" : ""}`}></div>
                 </div>
             </div>
-            <div className='w-full text-blue-950 animationOwner'><span>{marqueData.name} {marqueData.Conatact}</span></div>
+            <div className='w-full text-blue-950 animationOwner text-[10px] lg:text-[1rem]'><span>{marqueData.name} {marqueData.Conatact}</span></div>
             <HeaderMobile menuRefData={menuRef} />
         </div>
     )
