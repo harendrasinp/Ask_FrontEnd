@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleStatus } from '@/redux/counterSclice'
-import HeaderMobile from '../header_mobile/header'
+import HeaderMobile from '../sideBare/header'
 const Header = () => {
     const status = useSelector((state: any) => state.counter.status);
     const dispatch = useDispatch();
