@@ -13,3 +13,16 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.animationOwner {
+  animation: marque 10s linear infinite;
+}
+
+@keyframes marque {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
