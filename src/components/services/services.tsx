@@ -3,7 +3,7 @@ import React from 'react'
 const Services = () => {
   return (
     <div className='relative w-full h-fit flex flex-col justify-center items-center'>
-      <img src="/Images/Services/service-bg1.png" alt="services background" className='w-full'/>
+      <img src="/Images/Services/Service-bg1.png" alt="services background" className='w-full'/>
       <span className='text-blue-950 font-bold'>Services We Provide</span>
       <div className='p-5'>
         <div className='bg-cyan-950 w-fit h-fit p-2 rounded-2xl shadow-cyan-950 shadow-2xl'>
