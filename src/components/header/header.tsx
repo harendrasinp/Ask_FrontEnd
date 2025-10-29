@@ -14,10 +14,10 @@ const Header = () => {
         dispatch(toggleStatus(!status))
     }
     return (
-        <div className='fixed top-0 z-50 w-screen h-fit bg-gray-100 flex flex-col justify-between p-1'>
+        <div className='fixed top-0 z-50 w-screen h-fit bg-gray-100 flex flex-col justify-between p-2'>
             <div className='w-full flex'>
                 <div className='w-full flex justify-between items-center'>
-                    <div className='relative w-[11rem] h-10 md:h-[3rem] lg:w-[12rem] lg:h-[3rem]'>
+                    <div className='relative w-[11rem] h-11 md:h-[3rem] lg:w-[12rem] lg:h-[3rem]'>
                         <Image src="/Images/Logo/logo1.png" alt="logo" fill className='object-contain' />
                     </div>
                     <div className='hidden w-[16rem] lg:flex justify-center items-center gap-2'>
