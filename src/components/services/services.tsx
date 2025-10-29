@@ -5,7 +5,7 @@ const Services = () => {
     <div className='relative bg-orange-200/50 w-full h-fit flex flex-col justify-center items-center'>
       <img src="/Images/Services/Service-bg1.png" alt="services background" className='w-full'/>
       <div className='absolute top-8 right-4 w-[10rem] h-[10rem]'>
-        <img src="/Images/Services/Solarbg.webp" alt="services background" className='w-full h-full'/>
+        <img src="/Images/Services/solarbg.webp" alt="services background" className='w-full h-full'/>
       </div>
       <span className='text-blue-950 font-bold'>Services We Provide</span>
       <div className='p-5'>
