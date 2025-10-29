@@ -1,21 +1,26 @@
 export const ServiceCard=[
     {   
-        title:"Solar Panels",
+        title:"ResidentialSolar Panels",
         description:"We provide high quality solar panels for residential and commercial use.",
         imageUrl:"/Images/Services/solarbg.webp"
     },
     {   
-        title:"Solar Panels",
+        title:"Commercial Solar Panels",
         description:"We provide high quality solar panels for residential and commercial use.",
         imageUrl:"/Images/Services/solarbg.webp"
     },
     {   
-        title:"Solar Panels",
+        title:"Solar Water Heater",
         description:"We provide high quality solar panels for residential and commercial use.",
         imageUrl:"/Images/Services/solarbg.webp"
     },
-{   
-        title:"Solar Panels",
+    {   
+        title:"Solar Battery Storage",
+        description:"We provide high quality solar panels for residential and commercial use.",
+        imageUrl:"/Images/Services/solarbg.webp"
+    },
+    {
+        title:"Maintenance And Repair",
         description:"We provide high quality solar panels for residential and commercial use.",
         imageUrl:"/Images/Services/solarbg.webp"
     },
