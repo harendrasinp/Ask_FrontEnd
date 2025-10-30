@@ -13,7 +13,7 @@ const Contact = () => {
           <img src="/Images/Contact/contactTitle1.png" alt="Contact" className='w-20 h-20' />
         </div>
 
-        <div className='bg-white/10 backdrop-blur-md p-6 rounded-lg'>
+        <div className='bg-white/10 backdrop-blur-md p-6 rounded-lg z-50'>
           <ul className='flex flex-col gap-2 text-white mb-4'>
             <li><FontAwesomeIcon icon={faUser} className='mr-2' /> Amol Jamadar</li>
             <li><FontAwesomeIcon icon={faPhone} className='mr-2' /> +91 9970044897</li>
