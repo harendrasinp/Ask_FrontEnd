@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='absolute w-full h-[35rem] p-4'>
+            <div className='w-full h-[35rem] p-4'>
                 <div className='w-full h-full bg-gray-100/15 flex flex-col justify-evenly p-5'>
                    <div className=''>
                      <ul className='flex flex-col justify-between items-start gap-2'>
