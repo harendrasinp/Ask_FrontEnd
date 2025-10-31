@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faUser, faLocationDot } from '@fortawesome/free-solid-svg-icons'
-
+import { ContactData } from '../../content/contact/contactData'
 const Contact = () => {
   return (
     <div className='relative w-full min-h-screen bg-[url("/Images/Contact/contactBg1.png")] bg-cover bg-center bg-no-repeat'>
@@ -15,10 +15,9 @@ const Contact = () => {
 
         <div className='bg-white/10 backdrop-blur-md p-6 rounded-lg z-50'>
           <ul className='flex flex-col gap-2 text-white mb-4'>
-            <li><FontAwesomeIcon icon={faUser} className='mr-2' /> Amol Jamadar</li>
-            <li><FontAwesomeIcon icon={faPhone} className='mr-2' /> +91 9970044897</li>
-            <li><FontAwesomeIcon icon={faEnvelope} className='mr-2' /> amol_jamadar@asksolar.com</li>
-            <li><FontAwesomeIcon icon={faLocationDot} className='mr-2' /> Flat-12, Wing2, Shahada (Nandurbar)</li>
+            {ContactData.map((data,index)=>(
+              <li key={index}><FontAwesomeIcon icon={data.iconData} className='mr-2 text-justify' />{data.detail}</li>
+            ))}
           </ul>
 
           <form className='flex flex-col gap-3'>
