@@ -16,14 +16,16 @@ const About = () => {
         </div>
       </section>
       {/* -----------------------------------WHO WE ARE Section------------------------- */}
-      <section className='w-full flex flex-col items-center mb-5'>
+      <section className='w-full flex flex-col items-center'>
         <video src="/Images/Hero/installation_pic/vedio2.mp4" loop muted autoPlay playsInline className='w-[18rem] 
         h-[11rem] lg:w-[35rem] lg:h-[18rem]'>
         </video>
-        <div className='w-[24rem] py-1 px-3 lg:w-[55rem] lg:p-5'>
-          <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
-          <div className='w-[6.9rem] h-[0.2rem] bg-blue-950'></div>
-          <p className='text-justify text-blue-500 pompiere-regular'>{whoweare.description}</p>
+        <div className='w-full lg:w-[55rem] lg:p-5'>
+         <div className='ml-2'>
+           <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
+          <div className='w-[6.9rem] h-[0.2rem] bg-orange-400 mb-2'></div>
+         </div>
+          <p className='text-justify text-amber-50 pompiere-regular bg-cyan-950 p-2'>{whoweare.description}</p>
         </div>
       </section>
     </div>
