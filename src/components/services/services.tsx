@@ -18,7 +18,7 @@ const Services = () => {
             initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once:false, amount: 0.3 }}
           >
             <h4 className='text-amber-50 font-semibold'>{service.title}</h4>
             <p className="text-amber-200 bg-black/35 backdrop-blur-lg p-2 rounded-[0.5rem]">
