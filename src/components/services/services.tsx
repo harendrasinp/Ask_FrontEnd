@@ -5,7 +5,7 @@ import { useRef } from "react"
 const Services = () => {
   const scrollRef = useRef(null)
   return (
-    <div className='relative bg-orange-200/50 w-full h-fit flex flex-col justify-center items-center'>
+    <div className='relative bg-services_bgColor w-full h-fit flex flex-col justify-center items-center'>
       <span className='absolute text-amber-200 font-bold text-[1.2rem] top-8 left-4 lg:text-[2rem] lg:left-15 lg:top-25 lg:text-2xl'>Services We Provide</span>
       <img src="/Images/Services/Service-bg1.png" alt="services background" className='w-full' />
       <div className='absolute top-8 right-4 w-[10rem] h-[10rem]'>
@@ -21,7 +21,7 @@ const Services = () => {
             viewport={{ once:false, amount: 0.3 }}
           >
             <h4 className='text-amber-50 font-semibold'>{service.title}</h4>
-            <p className="text-amber-200 bg-black/35 backdrop-blur-lg p-2 rounded-[0.5rem]">
+            <p className="text-black bg-card_bgColor/45 backdrop-blur-sm p-2 rounded-[0.5rem]">
               {service.description}
             </p>
           </motion.div>))

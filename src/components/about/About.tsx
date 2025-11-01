@@ -25,7 +25,7 @@ const About = () => {
            <span className='text-green-600 font-bold geistSans'>{whoweare.heading}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-orange-400 mb-2'></div>
          </div>
-          <p className='text-justify text-amber-50 pompiere-regular bg-haren p-2'>{whoweare.description}</p>
+          <p className='text-justify text-amber-50 pompiere-regular bg-who_we_are_bgColor p-2'>{whoweare.description}</p>
         </div>
       </section>
     </div>

@@ -27,5 +27,8 @@
 }
 
 @theme {
-  --color-haren:#C3B1E1;
+  --color-who_we_are_bgColor:#C3B1E1;
+  --color-services_bgColor:#E7D0D9;
+  --color-card_bgColor:#DDE4F8;
+;
 }
