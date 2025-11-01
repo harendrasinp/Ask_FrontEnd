@@ -10,9 +10,9 @@ const Services = () => {
       <span className='text-blue-950 font-bold'>Services We Provide</span>
       <div className='p-5 h-fit flex flex-col gap-8 justify-center items-center'>
        {ServiceCard.map((service,index)=>(
-         <div key={index} className='bg-cyan-950 w-fit h-fit p-5 rounded-2xl shadow-cyan-950 shadow-2xl text-justify'>
+         <div key={index} className='bg-cyan-950 w-fit h-fit p-3 rounded-2xl shadow-cyan-950 shadow-2xl text-justify'>
           <h4 className='text-amber-50 font-semibold'>{service.title}</h4>
-          <p className='text-amber-200'>{service.description}</p>
+          <p className='text-amber-200 bg-black/30 p-2 rounded-[0.5rem]'>{service.description}</p>
         </div>))
        }
       </div>
