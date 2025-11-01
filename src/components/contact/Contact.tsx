@@ -14,7 +14,7 @@ const Contact = () => {
         </div>
 
         <div className='bg-white/10 backdrop-blur-md p-6 rounded-lg z-50'>
-          <ul className='flex flex-col gap-2 text-[1.3rem] text-white mb-4'>
+          <ul className='flex flex-col gap-2 text-[1rem] text-white mb-4'>
             {ContactData.map((data,index)=>(
               <li key={index}><FontAwesomeIcon icon={data.iconData} className='mr-2 text-justify' />{data.detail}</li>
             ))}
