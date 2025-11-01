@@ -25,3 +25,7 @@
     transform: translateX(-600px);
   }
 }
+
+@theme {
+  --color-haren:#C3B1E1;
+}
