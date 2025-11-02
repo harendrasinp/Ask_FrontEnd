@@ -1,16 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faUser, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { ContactData } from '../../content/contact/contactData'
+import Image from 'next/image'
 const Contact = () => {
   return (
     <div className='relative w-full min-h-screen bg-[url("/Images/Contact/contactBg1.png")] bg-cover bg-center bg-no-repeat'>
       <div className='absolute inset-0 bg-black/50'></div>
 
-      <div className='relative z-10 p-4 flex flex-col gap-8'>
-        <div className='flex justify-between items-center'>
+      <div className='relative z-10 p-4 flex flex-col items-center gap-8'>
+        <div className='relative  w-full h-55 flex justify-between '>
           <h1 className='text-white text-3xl font-semibold'>Contact Us</h1>
-          <img src="/Images/Contact/contactTitle1.png" alt="Contact" className='w-20 h-20' />
+          <Image src="/Images/Contact/contactTitle1.png" fill alt="Contact" className='object-contain' />
         </div>
 
         <div className='bg-white/10 backdrop-blur-md p-6 rounded-lg z-50'>
