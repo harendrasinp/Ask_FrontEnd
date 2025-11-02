@@ -1,11 +1,9 @@
 "use client"
 import { motion } from "motion/react"
 import { ServiceCard } from '@/content/services/servicesCard'
-import { useRef } from "react"
 const Services = () => {
-  const scrollRef = useRef(null)
   return (
-    <div className='relative bg-services_bgColor w-full h-full flex flex-col justify-center items-center overflow-hidden'>
+    <div id="Service" className='scroll-mt-15 relative bg-services_bgColor w-full h-full flex flex-col justify-center items-center overflow-hidden'>
       <span className='absolute text-amber-200 font-bold text-[1.2rem] top-8 left-4 lg:text-[2rem] lg:left-15 lg:top-25 lg:text-2xl'>Services We Provide</span>
       <img src="/Images/Services/Service-bg1.png" alt="services background" className='w-full' />
       <div className='absolute top-8 right-4 w-[10rem] h-[10rem]'>

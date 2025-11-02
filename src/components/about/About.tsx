@@ -10,7 +10,7 @@ const About = () => {
         <img src="/Images/Hero/BgImage/herobg1.png" alt="png image blue flow"
         className='w-full h-full' />
         <div className='z-10 absolute w-[24rem] py-1 px-3 lg:w-[55rem] lg:p-5'>
-          <span className='text-green-600 font-bold geistSans'>{MissionData.title}</span>
+          <span className='text-green-600 font-bold geistSans scroll-mt-25' id='aboutUs'>{MissionData.title}</span>
           <div className='w-[6.9rem] h-[0.2rem] bg-blue-950 mb-2'></div>
           <p className='text-black text-justify pompiere-regular '>{MissionData.Description}</p>
         </div>
