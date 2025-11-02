@@ -20,7 +20,7 @@ const Header = () => {
             <div className='w-full flex p-2'>
                 <div className='w-full flex justify-between items-center'>
                     <div className='relative w-[11rem] h-11 md:h-[3rem] lg:w-[12rem] lg:h-[3rem]'>
-                        <Image src="/Images/Logo/Logo2.png" alt="logo" fill className='object-contain' />
+                        <Image src="/Images/Logo/logo2.png" alt="logo" fill className='object-contain' />
                     </div>
                     <div className=' absolute right-[10rem] hidden w-[16rem] lg:flex justify-center items-center gap-2'>
                         <Link href="/" className='p-1 text-blue-950'>Home</Link>
