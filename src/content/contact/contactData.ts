@@ -9,7 +9,7 @@ export const ContactData=[
     {detail:"amol_jamadar@asksolar.com",
     iconData:faEnvelope
     },
-    {detail:"Ask Enterprises ann Agencies,Near Press maruti gate,Shop no.1,2,Surbhi sankul,Shahada,425409",
+    {detail:"Ask Enterprises and Agencies,Near Press maruti gate,Shop no.1,2,Surbhi sankul,Shahada,425409",
     iconData:faLocationDot
     }
 ]
