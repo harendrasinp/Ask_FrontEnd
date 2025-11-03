@@ -24,7 +24,7 @@ const Plans = () => {
                             <p className='text-sm mt-1 opacity-90'>{data.for}</p>
                         </div>
 
-                        <a href={data.link} download>
+                        <a href={data.link} target="_blan">
                             <Button/>
                         </a>
                     </div>
