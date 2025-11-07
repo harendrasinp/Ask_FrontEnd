@@ -9,7 +9,7 @@ const Contact = () => {
 
       <div className='relative z-10 p-4 flex flex-col items-center gap-8'>
         <div className='relative  w-full h-55 flex justify-between '>
-          <h1 id='contactus' className='text-white text-3xl font-semibold scroll-mt-22'>Contact Us</h1>
+          <h1 id='contactus' className='text-white text-3xl font-semibold scroll-mt-22'>Contact Info</h1>
           <Image src="/Images/Contact/contactTitle1.png" fill alt="Contact" className='object-contain' />
         </div>
 
