@@ -17,11 +17,12 @@ const Plans = () => {
                 {PlanData.map((data, index) => (
                     <div key={index}
                         className='w-[7rem] h-[16rem] bg-blue-950 text-amber-50 rounded-xl
-                        flex flex-col items-center justify-between p-5 shadow-lg shadow-black/40'>
+                        flex flex-col items-center justify-between p-5 shadow-lg shadow-black/40 '>
 
                         <div className='text-center'>
                             <h4 className='text-lg font-semibold'>{data.name}</h4>
                             <p className='text-sm mt-1 opacity-90'>{data.for}</p>
+                            <img src={data.image} alt="" />
                         </div>
 
                         <a href={data.link} download={data.pdf}>
