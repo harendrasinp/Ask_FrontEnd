@@ -24,9 +24,10 @@ const Header = () => {
                     </div>
                     <div className=' absolute right-[10rem] hidden w-[16rem] lg:flex justify-center items-center gap-2'>
                         <Link href="/" className='p-1 text-blue-950'>Home</Link>
-                        <Link href="/about" className='p-1 text-blue-950'>About</Link>
-                        <Link href="/contact" className='p-1 text-blue-950'>Contact</Link>
-                        <Link href="/services" className='p-1 text-blue-950'>Services</Link>
+                        <Link href="/#Service" className='p-1 text-blue-950'>Services</Link>
+                        <Link href="/#plans" className='p-1 text-blue-950'>Plans</Link>
+                        <Link href="/#aboutUs" className='p-1 text-blue-950'>About</Link>
+                        <Link href="/#contactus" className='p-1 text-blue-950'>Contact</Link>
                     </div>
                 </div>
                 <div ref={menuRef}

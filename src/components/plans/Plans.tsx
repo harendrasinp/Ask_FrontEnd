@@ -8,7 +8,7 @@ const Plans = () => {
         flex flex-col justify-center items-center py-10'>
 
             {/* ✅ Title Centered */}
-            <h2 className='text-3xl font-bold text-white mb-10'>
+            <h2 id='plans' className='text-3xl font-bold text-white mb-10 scroll-mt-22'>
                 Installation Plans
             </h2>
 
